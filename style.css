@@ -814,6 +814,7 @@ ol li {
 
 #s {
 	width: 12em;
+	border: 1px solid #999;
 	}
 #s:focus {
 	border-color: #666;
