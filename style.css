@@ -835,6 +835,7 @@ ol li {
 }
 #habari_username, #habari_password {
 	width: 15em;
+	border: 1px solid #999;
 }
 #habari_username:focus, #habari_password:focus {
 	border-color: #666;
