@@ -57,9 +57,11 @@ body {
 	padding: 0;
 	margin: 0;
 	position: relative;
-	height: 200px;
+	min-height: 200px;
 	background: #3371A3;
 	}
+
+* html #page { height: 200px } /* IE hack */
 
 #primary {
 	width: 500px;
@@ -88,11 +90,9 @@ body {
 /*- Main Menu in Header */
 
 ul.menu {
-	margin: 0;
+	margin: 50px 0 0 20px;
 	padding: 0;
-	position: absolute;
 	bottom: 0;
-	left: 20px;
 	width: 90%;
 	}
 
