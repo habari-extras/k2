@@ -586,8 +586,9 @@ input[type=text]:focus, textarea:focus {
 }
 
 #footer {
-	margin-top: 20px;
+	margin: 20px auto 0;
 	text-align: center;
+	width: 780px;
 	}
 
 #footer a {
