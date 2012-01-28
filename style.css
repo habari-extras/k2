@@ -54,7 +54,7 @@ body {
 * html #page { width: 770px } /* IE hack */
 
 #header {
-	padding: 0;
+	padding: 0 5%;
 	margin: 0;
 	position: relative;
 	min-height: 200px;
@@ -89,10 +89,10 @@ body {
 /*- Main Menu in Header */
 
 ul.menu {
-	margin: 50px 0 0 20px;
+	margin: 50px 0 0;
 	padding: 0;
 	bottom: 0;
-	width: 90%;
+	position: relative;
 	}
 
 ul.menu li {
@@ -100,14 +100,11 @@ ul.menu li {
 	margin: 0;
 	}
 
-ul.menu,
 ul.menu li a {
-	padding: 5px 15px 6px;
-	}
-
-ul.menu li a {
+	display: inline-block;
 	color: white;
 	margin: 0;
+	padding: 5px 15px 6px;
 	}
 
 ul.menu li a:hover {
@@ -161,7 +158,7 @@ h1 { /* H1 is the title in the header */
 	font-weight: bold;
 	letter-spacing: -1px;
 	margin: 0;
-	padding: 75px 40px 0;
+	padding: 75px 0 0;
 	}
 
 h1, h1 a, h1 a:hover, h1 a:visited,
@@ -172,10 +169,6 @@ h1, h1 a, h1 a:hover, h1 a:visited,
 
 h1 a:hover {
 	text-decoration: underline;
-	}
-
-#header .description { /* Description in header */
-	margin: 0 40px;
 	}
 
 h2 { /* H2 is what kind of page you are on. Eg. 'Monthly Archive'. */
