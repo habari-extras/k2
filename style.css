@@ -72,7 +72,6 @@ body {
 	}
 
 .secondary {
-	font-size: 1em;
 	line-height: 1.5em;
 	padding: 10px 0;
 	margin: 0 0 20px 71%;
@@ -107,7 +106,6 @@ ul.menu li a {
 	}
 
 ul.menu li a {
-	font-size: 1em;
 	color: white;
 	margin: 0;
 	}
@@ -177,7 +175,6 @@ h1 a:hover {
 	}
 
 #header .description { /* Description in header */
-	font-size: 1em;
 	margin: 0 40px;
 	}
 
