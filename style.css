@@ -806,7 +806,7 @@ ol li {
 
 #s {
 	width: 12em;
-	border: 1px solid #999;
+	border: 1px solid #ddd;
 	}
 #s:focus {
 	border-color: #666;
@@ -827,7 +827,7 @@ ol li {
 }
 #habari_username, #habari_password {
 	width: 15em;
-	border: 1px solid #999;
+	border: 1px solid #ddd;
 }
 #habari_username:focus, #habari_password:focus {
 	border-color: #666;
