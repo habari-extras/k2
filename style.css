@@ -109,13 +109,13 @@ ul.menu li a {
 
 ul.menu li a:hover {
 	background: #333;
-	color: #eee !important;
+	color: #eee;
 	text-decoration: none;
 	}
 
 ul.menu li.current_page_item a,
 ul.menu li.current_page_item a:hover {
-	color: #333 !important;
+	color: #333;
 	background: white;
 	text-decoration: none;
 	}
