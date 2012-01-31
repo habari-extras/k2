@@ -550,6 +550,7 @@ li.bypostauthor blockquote {
 	font: 1.2em 'Courier New', Courier, Monospace;
 	padding: 3px;
 	color: #777;
+	border: 1px solid #ddd;
 	}
 
 input[type=text]:focus, textarea:focus {
