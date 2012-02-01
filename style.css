@@ -610,13 +610,12 @@ li.bypostauthor blockquote {
 
 #footer a {
 	color: #888;
-	border-bottom: 1px solid #ccc;
 	font-weight: bold;
-	}
+	text-decoration: none;
+}
 
 #footer a:hover {
 	border: none;
-	text-decoration: none;
 	color: black;
 	}
 
