@@ -49,6 +49,8 @@ body {
 	width: 780px;
 	border: 1px solid #ddd;
 	border-top: none;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 	}
 
 * html #page { width: 770px } /* IE hack */
@@ -111,6 +113,8 @@ body {
 	color: white;
 	margin: 0;
 	padding: 5px 15px 6px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 	}
 
 #header ul.menu li a:hover {
@@ -557,6 +561,7 @@ li.bypostauthor blockquote {
 	padding: 3px;
 	color: #777;
 	border: 1px solid #ddd;
+  border-radius: 2px;
 	}
 
 input[type=text]:focus, textarea:focus {
@@ -813,6 +818,7 @@ ol li {
 #s {
 	width: 12em;
 	border: 1px solid #ddd;
+  border-radius: 2px;
 	}
 #s:focus {
 	border-color: #666;
