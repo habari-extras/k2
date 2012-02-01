@@ -54,6 +54,10 @@ input[type=text]:focus, textarea:focus {
 	border-color: #666;
 	}
 
+label[for] {
+  cursor: pointer;
+}
+
 #page {
 	background: white;
 	text-align: left;
