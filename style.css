@@ -86,6 +86,12 @@ body {
 	position: relative;
 	}
 
+/*- Description in Header */
+
+#header .description {
+  min-height: 1.35em;
+}
+  
 /*- Main Menu in Header */
 
 ul.menu {
