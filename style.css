@@ -94,44 +94,44 @@ body {
   
 /*- Main Menu in Header */
 
-ul.menu {
+#header ul.menu {
 	margin: 50px 0 0;
 	padding: 0;
 	bottom: 0;
 	position: relative;
 	}
 
-ul.menu li {
+#header ul.menu li {
 	display: inline;
 	margin: 0;
 	}
 
-ul.menu li a {
+#header ul.menu li a {
 	display: inline-block;
 	color: white;
 	margin: 0;
 	padding: 5px 15px 6px;
 	}
 
-ul.menu li a:hover {
+#header ul.menu li a:hover {
 	background: #333;
 	color: #eee;
 	text-decoration: none;
 	}
 
-ul.menu li.current_page_item a,
-ul.menu li.current_page_item a:hover {
+#header ul.menu li.current_page_item a,
+#header ul.menu li.current_page_item a:hover {
 	color: #333;
 	background: white;
 	text-decoration: none;
 	}
 
-.admintab {
+#header .admintab {
 	position: absolute;
 	right: 0px;
 	}
 
-* html .admintab { padding: 5px 15px 6px }	/* IE hack */
+#header * html .admintab { padding: 5px 15px 6px }	/* IE hack */
 
 a img,:link img,:visited img { border:none }
 
