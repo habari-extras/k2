@@ -40,10 +40,13 @@ body {
 	margin: 0 0 30px;
 	}
 
-input[type=text], textarea {
+input {
 	font: 1.1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
-  padding: 3px;
 	color: #777;
+}
+
+input[type=text], input[type=submit], textarea {
+  padding: 3px;
 	border: 1px solid #ddd;
   border-radius: 2px;
 	}
@@ -56,6 +59,11 @@ input[type=text]:focus, textarea:focus {
 
 label[for] {
   cursor: pointer;
+}
+
+input[type=submit], input[type=button] {
+  background: #ededed;
+  padding: 3px 6px;
 }
 
 #page {
