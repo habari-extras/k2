@@ -725,11 +725,16 @@ code {
 acronym, abbr {
 	font-size: 0.9em;
 	letter-spacing: .07em;
-	border-bottom: 1px dashed #999;
-	cursor: help;
 	}
 
-.chronodata abbr { border: 0; }
+acronym[title], abbr[title] {
+  border-bottom: 1px dashed #999;
+  cursor: help;
+}
+
+.chronodata abbr { 
+  border: 0;
+}
 
 blockquote {
 	margin: 20px 0;
