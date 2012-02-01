@@ -40,6 +40,20 @@ body {
 	margin: 0 0 30px;
 	}
 
+input[type=text], textarea {
+	font: 1.2em 'Courier New', Courier, Monospace;
+	padding: 3px;
+	color: #777;
+	border: 1px solid #ddd;
+  border-radius: 2px;
+	}
+
+input[type=text]:focus, textarea:focus {
+	background: #fff;
+	color: #333;
+	border-color: #666;
+	}
+
 #page {
 	background: white;
 	text-align: left;
@@ -556,20 +570,6 @@ li.bypostauthor blockquote {
 	margin: 0;
 	}
 
-.comments input[type=text], .comments textarea {
-	font: 1.2em 'Courier New', Courier, Monospace;
-	padding: 3px;
-	color: #777;
-	border: 1px solid #ddd;
-  border-radius: 2px;
-	}
-
-input[type=text]:focus, textarea:focus {
-	background: #fff;
-	color: #333;
-	border-color: #666;
-	}
-
 .comments form input[type=text] {
 	width: 45%;
 	margin: 5px 5px 1px 0;
@@ -817,12 +817,7 @@ ol li {
 
 #s {
 	width: 12em;
-	border: 1px solid #ddd;
-  border-radius: 2px;
 	}
-#s:focus {
-	border-color: #666;
-}
 
 #searchsubmit {
 	width: 3em;
@@ -839,10 +834,6 @@ ol li {
 }
 #habari_username, #habari_password {
 	width: 15em;
-	border: 1px solid #ddd;
-}
-#habari_username:focus, #habari_password:focus {
-	border-color: #666;
 }
 
 /* CSS Beyond this point is for various supported plugins and not the 'core' K2 template */
