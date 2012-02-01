@@ -41,8 +41,8 @@ body {
 	}
 
 input[type=text], textarea {
-	font: 1.2em 'Courier New', Courier, Monospace;
-	padding: 3px;
+	font: 1.1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+  padding: 3px;
 	color: #777;
 	border: 1px solid #ddd;
   border-radius: 2px;
