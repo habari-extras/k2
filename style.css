@@ -45,10 +45,10 @@ input {
 	color: #777;
 }
 
-input[type=text], input[type=submit], textarea {
-  padding: 3px;
+input[type=text], input[type=submit], input[type=password], textarea {
+	padding: 3px;
 	border: 1px solid #ddd;
-  border-radius: 2px;
+	border-radius: 2px;
 	}
 
 input[type=text]:focus, textarea:focus {
