@@ -834,7 +834,7 @@ ol li {
 	}
 
 #searchsubmit {
-	width: 3em;
+	min-width: 3em;
 }
 
 /*- Login Form */
