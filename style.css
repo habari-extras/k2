@@ -208,7 +208,6 @@ h1 a:hover {
 	}
 
 h2 { /* H2 is what kind of page you are on. Eg. 'Monthly Archive'. */
-	text-align: center;
 	font-size: 2.4em;
 	font-weight: bold;
 	letter-spacing: -1px;
@@ -218,7 +217,6 @@ h2 { /* H2 is what kind of page you are on. Eg. 'Monthly Archive'. */
 	font-size: 1.5em !important;
 	font-weight: normal !important;
 	padding: 0 !important;
-	display: inline;
 	}
 
 #primary h3, #primary h4, .single #primary .k2-asides h3 { /* H3 is entry headlines. H4 is comments and replyform headlines */
