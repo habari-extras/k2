@@ -762,9 +762,12 @@ hr {
 	color: #666;
   font-weight: bold;
   display: inline-block;
-  width: 50%;
-  text-align: right;
+  width: 49%;
 	}
+
+#page-selector a.next-page {
+  text-align: right;
+}
 
 #page-selector a.next-page:first-child {
   margin-left: 50%;
