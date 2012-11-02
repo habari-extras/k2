@@ -16,6 +16,7 @@ class K2 extends Theme
 		'login_display_location' => 'sidebar',
 		'home_label' => 'Blog',
 		'show_author' => false,
+    'add_seach_form' => false,
 	);
 
 	/**
@@ -35,10 +36,19 @@ class K2 extends Theme
 				'type' => 'k2_menu',
 			) );
 
-			$block->add_to_area( 'nav' );
+      $block->add_to_area( 'nav' );
 			Session::notice( _t( 'Added K2 Menu block to Nav area.' ), 'k2' );
 		}
-	}
+
+    $searchform = new Block( array (
+      'title' => _t('Search for'),
+      'type' => 'search_form',
+    ) );
+
+    $searchform->add_to_area( 'sidebar' );
+    Session::notice( _t( 'Added search form block to Sidebar area.' ), 'k2' );
+
+  }
 
 	/**
 	 * Execute on theme init to apply these filters to output

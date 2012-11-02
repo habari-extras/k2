@@ -40,6 +40,32 @@ body {
 	margin: 0 0 30px;
 	}
 
+input {
+	font: 1.1em 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	color: #777;
+}
+
+input[type=text], input[type=submit], input[type=password], textarea {
+	padding: 3px;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	}
+
+input[type=text]:focus, textarea:focus {
+	background: #fff;
+	color: #333;
+	border-color: #666;
+	}
+
+label[for] {
+  cursor: pointer;
+}
+
+input[type=submit], input[type=button] {
+  background: #ededed;
+  padding: 3px 6px;
+}
+
 #page {
 	background: white;
 	text-align: left;
@@ -49,17 +75,21 @@ body {
 	width: 780px;
 	border: 1px solid #ddd;
 	border-top: none;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
 	}
 
 * html #page { width: 770px } /* IE hack */
 
 #header {
-	padding: 0;
+	padding: 0 5%;
 	margin: 0;
 	position: relative;
-	height: 200px;
+	min-height: 200px;
 	background: #3371A3;
 	}
+
+* html #page { height: 200px } /* IE hack */
 
 #primary {
 	width: 500px;
@@ -70,7 +100,6 @@ body {
 	}
 
 .secondary {
-	font-size: 1em;
 	line-height: 1.5em;
 	padding: 10px 0;
 	margin: 0 0 20px 71%;
@@ -85,52 +114,54 @@ body {
 	position: relative;
 	}
 
+/*- Description in Header */
+
+#header .description {
+  min-height: 1.35em;
+}
+  
 /*- Main Menu in Header */
 
-ul.menu {
-	margin: 0;
+#header ul.menu {
+	margin: 50px 0 0;
 	padding: 0;
-	position: absolute;
 	bottom: 0;
-	left: 20px;
-	width: 90%;
+	position: relative;
 	}
 
-ul.menu li {
+#header ul.menu li {
 	display: inline;
 	margin: 0;
 	}
 
-ul.menu,
-ul.menu li a {
-	padding: 5px 15px 6px;
-	}
-
-ul.menu li a {
-	font-size: 1em;
+#header ul.menu li a {
+	display: inline-block;
 	color: white;
 	margin: 0;
+	padding: 5px 15px 6px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 	}
 
-ul.menu li a:hover {
+#header ul.menu li a:hover {
 	background: #333;
-	color: #eee !important;
+	color: #eee;
 	text-decoration: none;
 	}
 
-ul.menu li.current_page_item a,
-ul.menu li.current_page_item a:hover {
-	color: #333 !important;
+#header ul.menu li.current_page_item a,
+#header ul.menu li.current_page_item a:hover {
+	color: #333;
 	background: white;
 	text-decoration: none;
 	}
 
-.admintab {
+#header .admintab {
 	position: absolute;
 	right: 0px;
 	}
 
-* html .admintab { padding: 5px 15px 6px }	/* IE hack */
+#header * html .admintab { padding: 5px 15px 6px }	/* IE hack */
 
 a img,:link img,:visited img { border:none }
 
@@ -163,7 +194,7 @@ h1 { /* H1 is the title in the header */
 	font-weight: bold;
 	letter-spacing: -1px;
 	margin: 0;
-	padding: 75px 40px 0;
+	padding: 75px 0 0;
 	}
 
 h1, h1 a, h1 a:hover, h1 a:visited,
@@ -176,13 +207,7 @@ h1 a:hover {
 	text-decoration: underline;
 	}
 
-#header .description { /* Description in header */
-	font-size: 1em;
-	margin: 0 40px;
-	}
-
 h2 { /* H2 is what kind of page you are on. Eg. 'Monthly Archive'. */
-	text-align: center;
 	font-size: 2.4em;
 	font-weight: bold;
 	letter-spacing: -1px;
@@ -192,7 +217,6 @@ h2 { /* H2 is what kind of page you are on. Eg. 'Monthly Archive'. */
 	font-size: 1.5em !important;
 	font-weight: normal !important;
 	padding: 0 !important;
-	display: inline;
 	}
 
 #primary h3, #primary h4, .single #primary .k2-asides h3 { /* H3 is entry headlines. H4 is comments and replyform headlines */
@@ -556,18 +580,6 @@ li.bypostauthor blockquote {
 	margin: 0;
 	}
 
-.comments input[type=text], .comments textarea {
-	font: 1.2em 'Courier New', Courier, Monospace;
-	padding: 3px;
-	color: #777;
-	}
-
-input[type=text]:focus, textarea:focus {
-	background: #fff;
-	color: #333;
-	border-color: #666;
-	}
-
 .comments form input[type=text] {
 	width: 45%;
 	margin: 5px 5px 1px 0;
@@ -589,19 +601,19 @@ input[type=text]:focus, textarea:focus {
 }
 
 #footer {
-	margin-top: 20px;
+	margin: 20px auto 0;
 	text-align: center;
+	width: 780px;
 	}
 
 #footer a {
 	color: #888;
-	border-bottom: 1px solid #ccc;
 	font-weight: bold;
-	}
+	text-decoration: none;
+}
 
 #footer a:hover {
 	border: none;
-	text-decoration: none;
 	color: black;
 	}
 
@@ -711,11 +723,16 @@ code {
 acronym, abbr {
 	font-size: 0.9em;
 	letter-spacing: .07em;
-	border-bottom: 1px dashed #999;
-	cursor: help;
 	}
 
-.chronodata abbr { border: 0; }
+acronym[title], abbr[title] {
+  border-bottom: 1px dashed #999;
+  cursor: help;
+}
+
+.chronodata abbr { 
+  border: 0;
+}
 
 blockquote {
 	margin: 20px 0;
@@ -735,23 +752,27 @@ hr {
 /*Sample Page Selector Code - active page gets .current-page class */
 
 #page-selector {
-	text-align: center;
 	margin: 10px 0;
 	padding: 0;
-	font-size: 1.2em;
 	width: 100%;
 	color: #999;
 	}
 
 #page-selector a {
-	color: #27d;
+	color: #666;
+  font-weight: bold;
+  display: inline-block;
+  width: 49%;
 	}
 
-#page-selector a.current-page {
-	padding: 2px;
-	border: 1px solid #999;
-	color: #999;
+#page-selector a.next-page {
+  text-align: right;
 }
+
+#page-selector a.next-page:first-child {
+  margin-left: 50%;
+}
+
 
 .draft { background: #FFFFCC; }
 
@@ -814,13 +835,11 @@ ol li {
 
 #s {
 	width: 12em;
+  margin-bottom: 0.3em;
 	}
-#s:focus {
-	border-color: #666;
-}
 
 #searchsubmit {
-	width: 3em;
+	min-width: 3em;
 }
 
 /*- Login Form */
@@ -834,9 +853,6 @@ ol li {
 }
 #habari_username, #habari_password {
 	width: 15em;
-}
-#habari_username:focus, #habari_password:focus {
-	border-color: #666;
 }
 
 /* CSS Beyond this point is for various supported plugins and not the 'core' K2 template */
